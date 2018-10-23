@@ -86,6 +86,7 @@ pipeline:
     image: plugins/codacy:1
     pull: true
     secrets: [ codacy_token ]
+    pattern: coverage.out
     when:
       local: false
 
